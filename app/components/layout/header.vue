@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from "@nuxt/ui";
+  import type { NavigationMenuItem } from "@nuxt/ui";
 
-const route = useRoute();
+  const route = useRoute();
 
-const items = computed<NavigationMenuItem[]>(() => [
-  {
-    label: "Home",
-    to: "/",
-    active: route.path === "/",
-  },
-  {
-    label: "Blog",
-    to: "/blog/list",
-    active: route.path.startsWith("/blog"),
-  },
-]);
+  const items = computed<NavigationMenuItem[]>(() => [
+    {
+      label: "Home",
+      to: "/",
+      active: route.path === "/",
+    },
+    {
+      label: "Blog",
+      to: "/blog/list",
+      active: route.path.startsWith("/blog"),
+    },
+  ]);
 </script>
 
 <template>
@@ -25,14 +25,8 @@ const items = computed<NavigationMenuItem[]>(() => [
       <UColorModeButton />
 
       <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
-        <UButton
-          color="neutral"
-          variant="ghost"
-          to="https://github.com/nuxt/ui"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-        />
+        <UButton color="neutral" variant="ghost" to="https://github.com/dongcx111/demo-nuxt" target="_blank"
+          icon="i-simple-icons-github" aria-label="GitHub" />
       </UTooltip>
     </template>
   </UHeader>
