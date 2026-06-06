@@ -9,7 +9,10 @@
 
 ## 🔗 预览地址
 
-[![Vercel Preview](https://vercel.com/button)](https://demo-nuxt-xi.vercel.app/)
+| 地址类型 | 访问链接 |
+|----------|----------|
+| 主地址 | [![Vercel Preview](https://vercel.com/button)](https://demo-nuxt-xi.vercel.app/) |
+| 备用地址 | [![备用服务器](https://img.shields.io/badge/备用服务器-访问-blue?style=flat-square)](http://47.106.36.222:3000/) |
 
 ## ✨ 功能特性
 
