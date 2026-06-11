@@ -15,7 +15,6 @@ pipeline{
                     echo "========A executed successfully========"
                 }
                 failure{
-                    echo "========A execution failed========"
                 }
             }
         }
